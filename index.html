@@ -18,6 +18,10 @@
       background-repeat: repeat; /* Set the background image to repeat */
       background-color: #36393e;
       font-family: sans-serif; /* Use a fallback font */
+      display: flex; /* Use flexbox layout */
+      flex-direction: column; /* Arrange elements in a column */
+      align-items: center; /* Center align elements horizontally */
+    }
 
     h1 {
       font-family: 'MinecraftFontBold', sans-serif; /* Use the custom font for the heading */
@@ -27,12 +31,20 @@
 
     .p1 {
       font-family: 'MinecraftFont', sans-serif; /* Use the custom font for the paragraph */
-      color: #ffffff; /* Set the color to red (hex code) */
+      color: #ffffff; /* Set the color to white (hex code) */
       font-weight: normal; /* Set the font weight to normal */
+    }
+
+    .gif-banner {
+      margin-top: 50px; /* Add top margin to adjust vertical position */
+      text-align: center; /* Center align the banner horizontally */
     }
   </style>
 </head>
 <body>
+  <div class="gif-banner">
+    <img src="banner.gif" alt="Banner GIF">
+  </div>
   <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
   <p class="p1">i don't know what im doing</p>
 </body>
