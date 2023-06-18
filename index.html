@@ -55,62 +55,30 @@
 
     .button-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      margin-top: 0px;
+      height: 32px;
+      background-color: #d60042;
     }
 
     .button {
       flex: 1;
-      margin: 0px;
-      padding: 13px;
-      background-color: #424549;
+      margin: 0;
+      padding: 0;
+      background-color: #32353a;
       color: #ffffff;
       font-family: 'MinecraftFont', sans-serif;
       font-weight: normal;
       border: none;
       cursor: pointer;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 20px;
       display: flex;
-      flex-direction: row-reverse;
       align-items: center;
-      justify-content: flex-start;
-      padding-right: 30px; /* Adjust the value as needed */
+      justify-content: center;
     }
 
-    .button-small {
-      flex: 0.32; /* Adjust the flex value to make it smaller */
-    }
-
-    /* Custom icons for each button */
-    .button-home {
-      background-image: url('button-home-icon.png');
-    }
-
-    .button-texture-packs {
-      background-image: url('button-texture-packs-icon.png');
-    }
-
-    .button-skins {
-      background-image: url('button-skins-icon.png');
-    }
-
-    .button-socials {
-      background-image: url('button-socials-icon.png');
-    }
-
-    .button-planet-mc {
-      background-image: url('button-planet-mc-icon.png');
-    }
-
-    .button-discord {
-      background-image: url('button-discord-icon.png');
-    }
-
-    .button-suggestions {
-      background-image: url('button-suggestions-icon.png');
+    .button:not(:last-child) {
+      margin-right: 1px;
     }
   </style>
 </head>
@@ -118,13 +86,13 @@
   <div class="banner-bar"></div>
   <img class="gif-banner" src="banner.gif" alt="Banner GIF">
   <div class="button-container">
-    <button class="button button-home">Home</button>
-    <button class="button button-texture-packs">Texture Packs</button>
-    <button class="button button-skins">Skins</button>
-    <button class="button button-socials">Socials</button>
-    <button class="button button-planet-mc">Planet MC</button>
-    <button class="button button-discord">Discord</button>
-    <button class="button button-suggestions">Suggestions</button>
+    <button class="button">Home</button>
+    <button class="button">Resource Packs</button>
+    <button class="button">Skins</button>
+    <button class="button">Socials</button>
+    <button class="button">Planet MC</button>
+    <button class="button">Discord</button>
+    <button class="button">Sugestions</button>
   </div>
 </body>
 </html>
