@@ -8,6 +8,10 @@
       font-family: 'MinecraftFontBold'; /* Provide a name for the custom font */
       src: url('minecraft-font-bold.otf') format('opentype'); /* Update the font file name and path */
     }
+    @font-face {
+      font-family: 'MinecraftFont'; /* Provide a name for the custom font */
+      src: url('minecraft-font.otf') format('opentype'); /* Update the font file name and path */
+    }
 
     body {
       background-color: #36393e;
@@ -19,11 +23,16 @@
       color: #d60042; /* Set the color to red (hex code) */
       font-weight: normal; /* Set the font weight to normal */
     }
+     p1 {
+      font-family: 'MinecraftFont', sans-serif; /* Use the custom font for the heading */
+      color: #d60042; /* Set the color to red (hex code) */
+      font-weight: normal; /* Set the font weight to normal */
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to My GitHub Website!</h1>
-  <p>This is a sample HTML file for my GitHub website.</p>
+  <p1>This is a sample HTML file for my GitHub website.</p1>
 </body>
 </html>
 
