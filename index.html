@@ -53,7 +53,7 @@
       background-color: #d60042;
     }
 
-     .button-container {
+    .button-container {
       display: flex;
       width: 100%;
       justify-content: space-between;
@@ -71,7 +71,71 @@
       border: none;
       cursor: pointer;
       text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    .button::before,
+    .button::after {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .button::before {
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+
+    .button::after {
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+
+    .button:nth-child(1)::before,
+    .button:nth-child(1)::after {
+      background-image: url('button-home-icon.png');
+    }
+
+    .button:nth-child(2)::before,
+    .button:nth-child(2)::after {
+      background-image: url('button-resource-packs-icon.png');
+    }
+
+    .button:nth-child(3)::before,
+    .button:nth-child(3)::after {
+      background-image: url('button-skins-icon.png');
+    }
+
+    .button:nth-child(4)::before,
+    .button:nth-child(4)::after {
+      background-image: url('button-socials-icon.png');
+    }
+
+    .button:nth-child(5)::before,
+    .button:nth-child(5)::after {
+      background-image: url('button-planet-mc-icon.png');
+    }
+
+    .button:nth-child(6)::before,
+    .button:nth-child(6)::after {
+      background-image: url('button-discord-icon.png');
+    }
+
+    .button:nth-child(7)::before,
+    .button:nth-child(7)::after {
+      background-image: url('button-suggestions-icon.png');
+    }
+
+    /* Repeat the above pattern for each button */
+
   </style>
 </head>
 <body>
@@ -84,7 +148,7 @@
     <button class="button">Socials</button>
     <button class="button">Planet MC</button>
     <button class="button">Discord</button>
-    <button class="button">Sugestions</button>
+    <button class="button">Suggestions</button>
   </div>
 </body>
 </html>
