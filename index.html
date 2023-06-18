@@ -135,28 +135,18 @@
     }
 
     /* Repeat the above pattern for each button */
-
-    .button + .button::before {
+    
+    .button:not(:last-child)::after {
       content: "";
       position: absolute;
       top: 50%;
-      left: 0;
+      right: -10px;
       transform: translateY(-50%);
+      height: 20px;
       width: 1px;
-      height: 80%;
       background-color: #ffffff;
     }
 
-    .button-container::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 100%;
-      height: 1px;
-      background-color: #d60042;
-    }
   </style>
 </head>
 <body>
