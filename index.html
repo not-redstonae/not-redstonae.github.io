@@ -5,42 +5,50 @@
   <link rel="icon" href="knuckles-icon.png" type="image/png">
   <style>
     @font-face {
-      font-family: 'MinecraftFontBold';
-      src: url('minecraft-font-bold.otf') format('opentype');
+      font-family: 'MinecraftFontBold'; /* Provide a name for the custom font */
+      src: url('minecraft-font-bold.otf') format('opentype'); /* Update the font file name and path */
     }
-
     @font-face {
-      font-family: 'MinecraftFont';
-      src: url('minecraft-font.otf') format('opentype');
+      font-family: 'MinecraftFont'; /* Provide a name for the custom font */
+      src: url('minecraft-font.otf') format('opentype'); /* Update the font file name and path */
     }
 
     body {
-      background-image: url('knuckles-background.png');
-      background-repeat: repeat;
+      background-image: url('knuckles-background.png'); /* Add the background image */
+      background-repeat: repeat; /* Set the background image to repeat */
       background-color: #36393e;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: sans-serif; /* Use a fallback font */
+    }
+
+    h1 {
+      font-family: 'MinecraftFontBold', sans-serif; /* Use the custom font for the heading */
+      color: #d60042; /* Set the color to red (hex code) */
+      font-weight: normal; /* Set the font weight to normal */
+    }
+
+    .p1 {
+      font-family: 'MinecraftFont', sans-serif; /* Use the custom font for the paragraph */
+      color: #ffffff; /* Set the color to white (hex code) */
+      font-weight: normal; /* Set the font weight to normal */
     }
 
     .banner {
-      background-image: url('banner.gif');
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 200px;
-      text-align: center;
-      color: #ffffff;
-      font-size: 24px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: 0;
+      background-image: url('banner.gif'); /* Add the banner image */
+      background-repeat: no-repeat; /* Set the banner image to not repeat */
+      background-size: contain; /* Adjust the size of the banner image */
+      height: 200px; /* Set the height of the banner */
+      text-align: center; /* Center align the text within the banner */
+      color: #ffffff; /* Set the text color to white (hex code) */
+      font-size: 24px; /* Adjust the font size of the text */
+      padding-top: 100px; /* Add padding to vertically center the text within the banner */
     }
   </style>
 </head>
 <body>
-  <div class="banner"></div>
+  <div class="banner">
+    <h1>Sample Banner Text</h1>
+    <p class="p1">This is a sample banner with GIF background.</p>
+  </div>
   <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
   <p class="p1">i don't know what im doing</p>
 </body>
