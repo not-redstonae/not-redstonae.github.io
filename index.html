@@ -57,7 +57,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      margin-top: 0px;
+      margin-top: 10px;
     }
 
     .button {
@@ -71,13 +71,17 @@
       border: none;
       cursor: pointer;
     }
+
+    .button-small {
+      flex: 0.5; /* Adjust the flex value to make it smaller */
+    }
   </style>
 </head>
 <body>
   <div class="banner-bar"></div>
   <img class="gif-banner" src="banner.gif" alt="Banner GIF">
   <div class="button-container">
-    <button class="button">Button 1</button>
+    <button class="button button-small">Button 1</button>
     <button class="button">Button 2</button>
     <button class="button">Button 3</button>
     <button class="button">Button 4</button>
