@@ -18,37 +18,41 @@
       background-repeat: repeat;
       background-color: #36393e;
       font-family: sans-serif;
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox layout */
-      flex-direction: column; /* Arrange elements vertically */
-      align-items: flex-start; /* Align elements to the left */
-      justify-content: center; /* Center align elements vertically */
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
       font-family: 'MinecraftFontBold', sans-serif;
       color: #d60042;
       font-weight: normal;
-      text-align: left; /* Align heading text to the left */
+      text-align: center; /* Align heading text to the center */
     }
 
     .p1 {
       font-family: 'MinecraftFont', sans-serif;
       color: #ffffff;
       font-weight: normal;
-      text-align: left; /* Align paragraph text to the left */
+      text-align: center; /* Align paragraph text to the center */
+    }
+
+    .gif-banner-container {
+      display: flex; /* Use flexbox layout */
+      justify-content: center; /* Center align elements horizontally */
+      margin-top: 30px; /* Adjust the top margin for spacing */
+      margin-bottom: 30px; /* Adjust the bottom margin for spacing */
     }
 
     .gif-banner {
       max-width: 100%;
       height: auto;
-      text-align: center;
     }
   </style>
 </head>
 <body>
-  <img class="gif-banner" src="banner.gif" alt="Banner GIF">
+  <div class="gif-banner-container">
+    <img class="gif-banner" src="banner.gif" alt="Banner GIF">
+  </div>
   <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
   <p class="p1">i don't know what im doing</p>
 </body>
