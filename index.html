@@ -84,7 +84,17 @@
     }
 
     .button:not(:last-child) {
-      border-right: 1px solid #d60042;
+      position: relative;
+    }
+
+    .button:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: -1px;
+      height: 80%;
+      width: 1px;
+      background-color: #ffffff;
     }
 
   </style>
@@ -93,10 +103,13 @@
   <div class="banner-bar"></div>
   <img class="gif-banner" src="banner.gif" alt="Banner GIF">
   <div class="button-container">
-    <button class="button"><img src="button-home-icon.png" alt="Home">Home<img src="button-home-icon.png" alt="Home"></button>
-    <button class="button"><img src="button-resource-packs-icon.png" alt="Resource Packs">Resource Packs<img src="button-resource-packs-icon.png" alt="Resource Packs"></button>
-    <button class="button"><img src="button-skins-icon.png" alt="Skins">Skins<img src="button-skins-icon.png" alt="Skins"></button>
-    <button class="button"><img src="button-socials-icon.png" alt="Socials">Socials<img src="button-socials-icon.png" alt="Socials"></button>
-    <button class="button"><img src="button-planet-mc-icon.png" alt="Planet MC">Planet MC<img src="button-planet-mc-icon.png" alt="Planet MC"></button>
-    <button class="button"><img src="button-discord-icon.png" alt="Discord">Discord<img src="button-discord-icon.png" alt="Discord"></button>
-    <button class="button"><img src="button-suggestions-icon.png" alt="Suggestions">Suggestions
+    <button class="button"><img src="button-home-icon.png" alt="Home">Home</button>
+    <button class="button"><img src="button-resource-packs-icon.png" alt="Texture Packs">Resource Packs</button>
+    <button class="button"><img src="button-skins-icon.png" alt="Player Skins">Skins</button>
+    <button class="button"><img src="button-socials-icon.png" alt="Socials">Socials</button>
+    <button class="button"><img src="button-planet-mc-icon.png" alt="Planet MC">Planet MC</button>
+    <button class="button"><img src="button-discord-icon.png" alt="Discord">Discord</button>
+    <button class="button"><img src="button-suggestions-icon.png" alt="Suggestions">Suggestions</button>
+  </div>
+</body>
+</html>
