@@ -18,33 +18,39 @@
       background-repeat: repeat;
       background-color: #36393e;
       font-family: sans-serif;
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-      display: flex; /* Use flexbox layout */
-      flex-direction: column; /* Arrange elements vertically */
-      align-items: center; /* Center align elements horizontally */
-      justify-content: center; /* Center align elements vertically */
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
       font-family: 'MinecraftFontBold', sans-serif;
       color: #d60042;
       font-weight: normal;
+      text-align: center;
     }
 
     .p1 {
       font-family: 'MinecraftFont', sans-serif;
       color: #ffffff;
       font-weight: normal;
+      text-align: center;
     }
 
     .gif-banner {
-      max-width: 69%;
+      max-width: 100%;
       height: auto;
+      display: block; /* Ensure the image is a block element */
+    }
+
+    .banner-bar {
+      background-color: #d60042;
+      height: 10px;
+      width: 100%;
     }
   </style>
 </head>
 <body>
+  <div class="banner-bar"></div>
   <img class="gif-banner" src="banner.gif" alt="Banner GIF">
   <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
   <p class="p1">i don't know what im doing</p>
