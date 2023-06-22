@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>not redstonæ</title>
+  <link rel="icon" href="knuckles-icon.png" type="image/png">
+  <style>
+    @font-face {
+      font-family: 'MinecraftFontBold';
+      src: url('minecraft-font-bold.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'MinecraftFont';
+      src: url('minecraft-font.otf') format('opentype');
+    }
 
+    body {
+      background-image: url('knuckles-background.png');
+      background-repeat: repeat;
+      background-color: #36393e;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: 'MinecraftFontBold', sans-serif;
+      color: #d60042;
+      font-weight: normal;
+    }
+
+    .p1 {
+      font-family: 'MinecraftFont', sans-serif;
+      color: #ffffff;
+      font-weight: normal;
+    }
+
+    .gif-banner {
+      max-height: 150px;
+      width: auto;
+      position: relative;
+    }
+
+    .banner-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #d60042;
+    }
+
+    .button-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 0px; /* Adjust the value as needed */
+    }
+
+    .button {
+      flex: 1;
+      margin: 0;
+      padding: 15px;
+      background-color: #32353a;
+      color: #ffffff;
+      font-family: 'MinecraftFont', sans-serif;
+      font-weight: normal;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button img {
+      height: 20px;
+      width: 20px;
+      margin: 0 5px;
+    }
+
+    .button:not(:last-child) {
+      position: relative;
+    }
+
+    .button:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: 0;
+      height: 80%;
+      width: 1px;
+      background-color: #ffffff;
+    }
+
+    .button:first-child {
+      font-family: 'MinecraftFontBold', sans-serif;
+      color: #d60042;
+      font-weight: normal;
+    }
+
+    /* Button hover styles */
+    .button:hover {
+      color: #d60042; /* Hovered color for first button */
+    }
+
+    .button:nth-child(2):hover {
+      color: #7F4934; /* Hovered color for second button */
+    }
+
+    .button:nth-child(3):hover {
+      color: #54E6B0; /* Hovered color for third button */
+    }
+
+    .button:nth-child(4):hover {
+      color: #A887E5; /* Hovered color for fourth button */
+    }
+
+    .button:nth-child(5):hover {
+      color: #EAB051; /* Hovered color for fifth button */
+    }
+
+    .button:nth-child(6):hover {
+      color: #6EC310; /* Hovered color for sixth button */
+    }
+
+    .button:nth-child(7):hover {
+      color: #5865F2; /* Hovered color for seventh button */
+    }
+  </style>
+</head>
+<body>
+   <div class="banner-bar"></div>
+  <img class="gif-banner" src="banner.gif" alt="Banner GIF">
+  <div class="button-container">
+    <button class="button" style="font-family: 'MinecraftFontBold', sans-serif;"><img src="button/home-icon.png" alt="Home">Home<img src="button/home-icon.png" alt="Home"></button>
+    <button class="button"><img src="button/search-icon.png" alt="Search">Search<img src="button/search-icon.png" alt="Search"></button>
+    <button class="button"><img src="button/textures-icon.png" alt="Textures">Textures<img src="button/textures-icon.png" alt="Textures"></button>
+    <button class="button"><img src="button/skins-icon.png" alt="Skins">Skins<img src="button/skins-icon.png" alt="Skins"></button>
+    <button class="button"><img src="button/socials-icon.png" alt="Socials">Socials<img src="button/socials-icon.png" alt="Socials"></button>
+    <button class="button" onclick="window.open('https://www.planetminecraft.com/member/not_redstonae/', '_blank')"><img src="button/planet-mc-icon.png" alt="PlanetMC">PlanetMC<img src="button/planet-mc-icon.png" alt="PlanetMC"></button>
+    <button class="button" onclick="window.open('https://discord.com/invite/yhTHm3s5B9', '_blank')"><img src="button/discord-icon.png" alt="Discord">Discord<img src="button/discord-icon.png" alt="Discord"></button>
+  </div>
+</body>
+</html>
