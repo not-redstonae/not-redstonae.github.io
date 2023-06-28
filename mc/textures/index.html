@@ -131,13 +131,45 @@
     .button:nth-child(7):hover {
       color: #5865F2; /* Hovered color for seventh button */
     }
+
+    .content-container {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .image-container {
+      margin-right: 10px;
+    }
+
+    .image-container img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-container h3 {
+      font-family: 'MinecraftFontBold', sans-serif;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .text-container p {
+      font-family: 'MinecraftFont', sans-serif;
+      color: #d60042;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
   <div class="banner-bar"></div>
   <img class="gif-banner" src="banner.gif" alt="Banner GIF">
   <div class="button-container">
-     <button class="button" onclick="window.location.href = 'https://not-redstonae.github.io/mc/home/';"><img src="button/home-icon.png" alt="Home">Home<img src="button/home-icon.png" alt="Home"></button>
+    <button class="button" onclick="window.location.href = 'https://not-redstonae.github.io/mc/home/';"><img src="button/home-icon.png" alt="Home">Home<img src="button/home-icon.png" alt="Home"></button>
     <button class="button"><img src="button/search-icon.png" alt="Search">Search<img src="button/search-icon.png" alt="Search"></button>
     <button class="button" onclick="window.location.href = 'https://not-redstonae.github.io/mc/textures/';" style="font-family: 'MinecraftFontBold', sans-serif;"><img src="button/textures-icon.png" alt="Textures">Textures<img src="button/textures-icon.png" alt="Textures"></button>
     <button class="button"><img src="button/skins-icon.png" alt="Skins">Skins<img src="button/skins-icon.png" alt="Skins"></button>
@@ -145,16 +177,18 @@
     <button class="button" onclick="window.open('https://www.planetminecraft.com/member/not_redstonae/', '_blank')"><img src="button/planet-mc-icon.png" alt="PlanetMC">PlanetMC<img src="button/planet-mc-icon.png" alt="PlanetMC"></button>
     <button class="button" onclick="window.open('https://discord.com/invite/yhTHm3s5B9', '_blank')"><img src="button/discord-icon.png" alt="Discord">Discord<img src="button/discord-icon.png" alt="Discord"></button>
   </div>
-  
- <div class="content-container">
+
+  <div class="content-container">
     <div class="image-container">
-      <img src="knuckles-icon.png" alt="Small Image">
+      <img src="small-image.png" alt="Small Image">
     </div>
     <div class="text-container">
       <h3>Title</h3>
       <p>Subtitle</p>
     </div>
   </div>
+
+  <!-- The rest of your HTML code -->
+
 </body>
 </html>
-
